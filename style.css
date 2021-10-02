@@ -10,6 +10,7 @@ body {
     height: 100vh;
     font-size: 25px;
     font-family: 'Karla', sans-serif;
+    background-color: #bbbbbb;
 }
 
 .gradient {
@@ -30,5 +31,16 @@ input[type=color] {
     height: 30px;
     width: 100px;
 }
+button{
+   display: flex;
+   margin: 0 auto;
+   background-color: #000000;
+   color: #ffffff;
+   padding: 0.5em 1em;
+   font-size: 1em;
+   margin-top: 0.5em; 
+}
 
-
+form label{
+  align-items: center;  
+}

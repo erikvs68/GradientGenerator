@@ -14,25 +14,46 @@
 		<title>Gradient Generator</title>
 	</head>
 	<body>
-		<form id="gradient" class="gradient">
+		<div id="container">
+			<form id="gradient" class="gradient">
+				<div>
+					<label for="picker-1">Color 1:</label>
+					<input
+						class="color1"
+						id="color1"
+						type="color"
+						name="color1"
+						value="#b5caf9"
+					/>
+				</div>
+				<div>
+					<label for="picker-2">Color 2:</label>
+					<input
+						class="color2"
+						id="color2"
+						type="color"
+						name="color2"
+						value="#aad186"
+					/>
+				</div>
+				<label for="split">Split:</label>
+				<input
+					type="range"
+					name="split"
+					value="50"
+					min="0"
+					max="100"
+					step="1"
+					id="slider"
+				/>
+			</form>
 			<div>
-				<label for="picker-1">Color 1:</label>
-				<input id="picker-1" type="color" name="color1" value="#b5caf9" />
+				<button id="surprise">Surprise Me</button>
+				<br />
+				<h4 id="css"></h4>
 			</div>
-			<div>
-				<label for="picker-2">Color 2:</label>
-				<input id="picker-2" type="color" name="color2" value="#aad186" />
-			</div>
-			<label for="split">Split:</label>
-			<input
-				value="50"
-				type="range"
-				id="split"
-				name="split"
-				min="0"
-				max="100"
-			/>
-		</form>
+		</div>
+
 		<script src="index.js"></script>
 	</body>
 </html>
